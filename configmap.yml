@@ -4,9 +4,9 @@ metadata:
   namespace: metallb-system
   name: config
 data:
-  config:
+  config: |
     address-pools:
       - name: default
-        protocol: layer2
-        addresses:
-        - 192.168.1.220-192.168.1.230
+    protocol: layer2
+      addresses:
+      - 192.168.1.220-192.168.1.230
