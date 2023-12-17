@@ -80,7 +80,7 @@ resource "kubernetes_service" "example" {
   metadata {
     name = "hello-lb"
     annotations = {
-      "metallb.universe.tf/address-pool" = "cheap"
+      "metallb.universe.tf/address-pool" = "default"
     }
   }
   spec {
