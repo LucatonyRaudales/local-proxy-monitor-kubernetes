@@ -33,7 +33,7 @@ resource "kubernetes_deployment" "example" {
   }
 
   spec {
-    replicas = 3
+    replicas = 1
 
     selector {
       match_labels = {
@@ -80,7 +80,7 @@ resource "kubernetes_service" "example" {
   metadata {
     name = "hello-lb"
     annotations = {
-      "metallb.universe.tf/address-pool" = "default"
+      "metallb.universe.tf/address-pool" = "cheap"
     }
   }
   spec {

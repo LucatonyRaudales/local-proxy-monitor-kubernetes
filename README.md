@@ -12,7 +12,7 @@ To create the cluster with Kind just run: Kind create cluster
 
 Nice, now we need to install the Kubernetes CLI (Kubectl) running the following command: brew install kubernetes-cli
 
-To update the kube context just run: kubectl cluster-info --context kind-kind.
+To update the kube context just run: kubectl cluster-info --context kind-kind
 
 You must got an output something like this message: 
 Kubernetes control plane is running at https://127.0.0.1:52123

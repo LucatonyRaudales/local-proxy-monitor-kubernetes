@@ -7,5 +7,5 @@ provider "helm" {
 resource "helm_release" "netdata" {
   name       = "netdata"
   repository = "https://netdata.github.io/helmchart/"
-  chart      = "netdata/netdata"
+  chart      = "netdata"
 }

@@ -6,7 +6,7 @@ metadata:
 data:
   config: |
     address-pools:
-      - name: default
-    protocol: layer2
+    - name: default
+      protocol: layer2  # (1)
       addresses:
       - 192.168.1.220-192.168.1.230
