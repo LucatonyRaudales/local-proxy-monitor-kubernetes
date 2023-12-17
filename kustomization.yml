@@ -3,3 +3,4 @@ namespace: default
 resources:
   - github.com/metallb/metallb/config/native?ref=v0.13.12
   - configmap.yml
+  - pooladdress.yml

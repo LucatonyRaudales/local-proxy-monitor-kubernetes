@@ -45,3 +45,13 @@ brew install terraform
 
 Having terraform installed we need run the following command to apply the terraform configuration:
 
+
+
+--Con el video
+kubectl edit configmap -n kube-system kube-proxy
+..
+- kubectl api-resources | grep metallb
+- kubectl -n metallb-system apply -f pool.yaml
+- kubectl get -n metallb-system IPAddressPool
+- kubectl apply -f advertisement.yaml
+- kubectl -n metallb-system get l2advertisement
