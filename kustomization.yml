@@ -1,6 +1,6 @@
-namespace: default
+namespace: metallb-system
 
 resources:
   - github.com/metallb/metallb/config/native?ref=v0.13.12
-  - configmap.yml
-  - pooladdress.yml
+  - pool.yaml
+  - advertisement.yaml

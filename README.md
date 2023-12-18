@@ -48,7 +48,10 @@ Having terraform installed we need run the following command to apply the terraf
 
 
 --Con el video
-- kubectl edit configmap -n kube-system kube-proxy
+`update kube proxy`
+- chmod +x update_kube_proxy.sh
+- kubectl edit configmap -n kube-system kube-proxy `or` update-proxi.sh
+
 - kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.9/config/manifests/metallb-native.yaml
 ..
 - kubectl api-resources | grep metallb
