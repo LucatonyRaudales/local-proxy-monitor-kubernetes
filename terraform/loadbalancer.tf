@@ -1,4 +1,4 @@
-resource "kubernetes_pod" "nginx_lb_pod" {
+/*esource "kubernetes_pod" "nginx_lb_pod" {
   metadata {
     name = "nginx-lb-pod"
   }
@@ -12,4 +12,4 @@ resource "kubernetes_pod" "nginx_lb_pod" {
       }
     }
   }
-}
+}*/

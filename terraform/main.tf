@@ -75,7 +75,7 @@ resource "kubernetes_deployment" "example" {
     }
   }
 }
-
+/*
 resource "kubernetes_service" "example" {
   metadata {
     name = "hello-lb"
@@ -95,4 +95,4 @@ resource "kubernetes_service" "example" {
 
     type = "LoadBalancer"
   }
-}
+}*/
