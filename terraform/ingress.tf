@@ -10,6 +10,7 @@ resource "kubernetes_ingress_v1" "example_ingress" {
       "kubernetes.io/ingress.class" = "nginx"
       "nginx.ingress.kubernetes.io/auth-type" = "basic"
       "nginx.ingress.kubernetes.io/auth-secret" = kubernetes_secret.auth.metadata[0].name
+      "nginx.ingress.kubernetes.io/auth-secret-type" = "auth-map"
       "nginx.ingress.kubernetes.io/auth-realm" = "Authentication Required"
     }
   }
@@ -21,6 +22,22 @@ resource "kubernetes_ingress_v1" "example_ingress" {
           backend {
             service {
               name = "web-app"
+              port {
+                number = 80
+              }
+            }
+          }
+          path = "/"
+        }
+      }
+    }
+    rule {
+        host = "monitor.kubernetes.local"
+      http {
+        path {
+          backend {
+            service {
+              name = "netdata"
               port {
                 number = 80
               }
